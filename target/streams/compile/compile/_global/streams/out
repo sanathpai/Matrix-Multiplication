@@ -1,0 +1,38 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Dell\OneDrive\Desktop\hw4-main\src\main\scala\hw4\MatMulMC.scala:183:5: not found: value idle[0m
+[0m[[0m[31merror[0m] [0m[0m    idle := true.B[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Dell\OneDrive\Desktop\hw4-main\src\main\scala\hw4\MatMulMC.scala:184:18: value := is not a member of Unit[0m
+[0m[[0m[31merror[0m] [0m[0m  Expression does not convert to assignment because receiver is not assignable.[0m
+[0m[[0m[31merror[0m] [0m[0m    loadMatrices := false.B[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Dell\OneDrive\Desktop\hw4-main\src\main\scala\hw4\MatMulMC.scala:185:5: not found: value multiplying[0m
+[0m[[0m[31merror[0m] [0m[0m    multiplying := false.B[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Dell\OneDrive\Desktop\hw4-main\src\main\scala\hw4\MatMulMC.scala:186:5: not found: value outputting[0m
+[0m[[0m[31merror[0m] [0m[0m    outputting := false.B[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Dell\OneDrive\Desktop\hw4-main\src\main\scala\hw4\MatMulMC.scala:195:5: not found: value idle[0m
+[0m[[0m[31merror[0m] [0m[0m    idle := false.B[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Dell\OneDrive\Desktop\hw4-main\src\main\scala\hw4\MatMulMC.scala:196:18: value := is not a member of Unit[0m
+[0m[[0m[31merror[0m] [0m[0m  Expression does not convert to assignment because receiver is not assignable.[0m
+[0m[[0m[31merror[0m] [0m[0m    loadMatrices := true.B[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Dell\OneDrive\Desktop\hw4-main\src\main\scala\hw4\MatMulMC.scala:197:5: not found: value multiplying[0m
+[0m[[0m[31merror[0m] [0m[0m    multiplying := false.B[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Dell\OneDrive\Desktop\hw4-main\src\main\scala\hw4\MatMulMC.scala:198:5: not found: value outputting[0m
+[0m[[0m[31merror[0m] [0m[0m    outputting := false.B[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\Dell\OneDrive\Desktop\hw4-main\src\main\scala\hw4\MatMulMC.scala:184:5: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method loadMatrices,[0m
+[0m[[0m[33mwarn[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function.[0m
+[0m[[0m[33mwarn[0m] [0m[0m    loadMatrices := false.B[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\Dell\OneDrive\Desktop\hw4-main\src\main\scala\hw4\MatMulMC.scala:196:5: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method loadMatrices,[0m
+[0m[[0m[33mwarn[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function.[0m
+[0m[[0m[33mwarn[0m] [0m[0m    loadMatrices := true.B[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m
+[0m[[0m[31merror[0m] [0m[0m8 errors found[0m

@@ -1,0 +1,42 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(hw4.MatMulModelTester, org.scalatest.tools.Framework$$anon$1@2d0d371a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(hw4.MatMulMCTester, org.scalatest.tools.Framework$$anon$1@2d0d371a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(hw4.MatMulSCTester, org.scalatest.tools.Framework$$anon$1@2d0d371a, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMatMulModelTester:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMatMulModel[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply identity (4x4)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply identity x in4x2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply identity x in2x4[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply in2x4 x in4x2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply in4x2 x in2x4[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMatMulSCTester:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMatMulSC[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply (1s row) x (1s column)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply identity x (1s column) (matrix-vector)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply (1s column) x (1s row)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply identity (no parallelism)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply in2x4 x in4x2 (no parallelism)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply in4x2 x in2x4 (no parallelism)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply identity (full parallelism)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply in2x4 x in4x2 (full parallelism)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply in4x2 x in2x4 (full parallelism)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMatMulMCTester:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMatMulMC[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply (1s row) x (1s column)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply identity x (1s column) (matrix-vector)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply (1s column) x (1s row)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply identity (no parallelism)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply in2x4 x in4x2 (no parallelism)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply in4x2 x in2x4 (no parallelism)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply identity (full parallelism)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply in2x4 x in4x2 (full parallelism)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply in4x2 x in2x4 (full parallelism)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should multiply in4x2 x in2x4 (full parallelism, half transfers)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 18 seconds, 771 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 24[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 3, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 24, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	hw4.MatMulModelTester[0m
+[0m[[0m[0mdebug[0m] [0m[0m	hw4.MatMulMCTester[0m
+[0m[[0m[0mdebug[0m] [0m[0m	hw4.MatMulSCTester[0m

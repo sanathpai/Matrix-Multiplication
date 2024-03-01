@@ -1,0 +1,37 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Dell\OneDrive\Desktop\hw4-main\src\test\scala\hw4\MatMulTester.scala:145:14: value outBlock is not a member of chisel3.Bundle{val in: chisel3.util.DecoupledIO[chisel3.Bundle{val a: chisel3.Vec[chisel3.SInt]; val b: chisel3.Vec[chisel3.SInt]}]; val out: chisel3.util.Valid[chisel3.Vec[chisel3.SInt]]}[0m
+[0m[[0m[31merror[0m] [0m[0m      dut.io.outBlock.valid.expect(false.B)[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Dell\OneDrive\Desktop\hw4-main\src\test\scala\hw4\MatMulTester.scala:153:24: value aBlock is not a member of chisel3.Bundle{val a: chisel3.Vec[chisel3.SInt]; val b: chisel3.Vec[chisel3.SInt]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dut.io.in.bits.aBlock.zip(aChunk).foreach{ case (dutIO, elem) => dutIO.poke(elem.S) }[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Dell\OneDrive\Desktop\hw4-main\src\test\scala\hw4\MatMulTester.scala:153:80: value poke is not a member of Any[0m
+[0m[[0m[31merror[0m] [0m[0m        dut.io.in.bits.aBlock.zip(aChunk).foreach{ case (dutIO, elem) => dutIO.poke(elem.S) }[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Dell\OneDrive\Desktop\hw4-main\src\test\scala\hw4\MatMulTester.scala:153:90: value S is not a member of Any[0m
+[0m[[0m[31merror[0m] [0m[0m        dut.io.in.bits.aBlock.zip(aChunk).foreach{ case (dutIO, elem) => dutIO.poke(elem.S) }[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Dell\OneDrive\Desktop\hw4-main\src\test\scala\hw4\MatMulTester.scala:154:24: value bBlock is not a member of chisel3.Bundle{val a: chisel3.Vec[chisel3.SInt]; val b: chisel3.Vec[chisel3.SInt]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dut.io.in.bits.bBlock.zip(bChunk).foreach{ case (dutIO, elem) => dutIO.poke(elem.S) }[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Dell\OneDrive\Desktop\hw4-main\src\test\scala\hw4\MatMulTester.scala:154:80: value poke is not a member of Any[0m
+[0m[[0m[31merror[0m] [0m[0m        dut.io.in.bits.bBlock.zip(bChunk).foreach{ case (dutIO, elem) => dutIO.poke(elem.S) }[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Dell\OneDrive\Desktop\hw4-main\src\test\scala\hw4\MatMulTester.scala:154:90: value S is not a member of Any[0m
+[0m[[0m[31merror[0m] [0m[0m        dut.io.in.bits.bBlock.zip(bChunk).foreach{ case (dutIO, elem) => dutIO.poke(elem.S) }[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Dell\OneDrive\Desktop\hw4-main\src\test\scala\hw4\MatMulTester.scala:160:14: value outBlock is not a member of chisel3.Bundle{val in: chisel3.util.DecoupledIO[chisel3.Bundle{val a: chisel3.Vec[chisel3.SInt]; val b: chisel3.Vec[chisel3.SInt]}]; val out: chisel3.util.Valid[chisel3.Vec[chisel3.SInt]]}[0m
+[0m[[0m[31merror[0m] [0m[0m      dut.io.outBlock.valid.expect(false.B)[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Dell\OneDrive\Desktop\hw4-main\src\test\scala\hw4\MatMulTester.scala:163:14: value outBlock is not a member of chisel3.Bundle{val in: chisel3.util.DecoupledIO[chisel3.Bundle{val a: chisel3.Vec[chisel3.SInt]; val b: chisel3.Vec[chisel3.SInt]}]; val out: chisel3.util.Valid[chisel3.Vec[chisel3.SInt]]}[0m
+[0m[[0m[31merror[0m] [0m[0m      dut.io.outBlock.valid.expect(true.B)[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Dell\OneDrive\Desktop\hw4-main\src\test\scala\hw4\MatMulTester.scala:167:16: value outBlock is not a member of chisel3.Bundle{val in: chisel3.util.DecoupledIO[chisel3.Bundle{val a: chisel3.Vec[chisel3.SInt]; val b: chisel3.Vec[chisel3.SInt]}]; val out: chisel3.util.Valid[chisel3.Vec[chisel3.SInt]]}[0m
+[0m[[0m[31merror[0m] [0m[0m        dut.io.outBlock.bits.zip(cChunk).foreach{ case (dutIO, elem) => dutIO.expect(elem.S) }[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Dell\OneDrive\Desktop\hw4-main\src\test\scala\hw4\MatMulTester.scala:167:79: value expect is not a member of Any[0m
+[0m[[0m[31merror[0m] [0m[0m        dut.io.outBlock.bits.zip(cChunk).foreach{ case (dutIO, elem) => dutIO.expect(elem.S) }[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Dell\OneDrive\Desktop\hw4-main\src\test\scala\hw4\MatMulTester.scala:167:91: value S is not a member of Any[0m
+[0m[[0m[31merror[0m] [0m[0m        dut.io.outBlock.bits.zip(cChunk).foreach{ case (dutIO, elem) => dutIO.expect(elem.S) }[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m12 errors found[0m
