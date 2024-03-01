@@ -1,10 +1,10 @@
-Homework 4 - Matrix Multiplication
+Matrix Multiplication
 =======================
 In this assignment, you will be implementing modules to perform [matrix multiplication](https://en.wikipedia.org/wiki/Matrix_multiplication). For simplicity, all elements will be 32-bit signed types, which corresponds to an `Int` in Scala and a `SInt(32.W)` in Chisel. We will break up this big task into 3 problems to make each step more manageable. In the first problem, you will implement matrix multiplication in Scala, and we will use that as a model for correct functional behavior to work with our tester. In the second problem, you will implement a simplified multiplication unit that accepts the entire matrix inputs in a single cycle (normally unreasonable). In the third problem, you will relax that constraint and develop a module that accepts the matrices over multiple cycles.
 
 
 
-# Problem 1 -  Functional Model - MatMulModel (20 pts)
+# Problem 1 -  Functional Model - MatMulModel
 
 First, you will need to make a (Scala) model `MatMulModel` (in `src/test/scala/hw4/MatMulModel.scala`) to double check we have the right answer. Since matrix multiplication is a common operation, we could probably find an external library to do it, but we will do it ourselves to practice the functional programming. Be sure your implementation uses _immutable_ data structures (e.g. immutable Seq) and has no uses of `var`.
 
@@ -12,7 +12,7 @@ Note, we use the case class `MatMulParams` to hold the problem parameters, and i
 
 
 
-# Problem 2 -  Single-Cycle Transfer Version - MatMulSC (30 pts)
+# Problem 2 -  Single-Cycle Transfer Version - MatMulSC
 
 With the model in hand, you are ready to implement `MatMulSC` (in `src/main/scala/hw4/MatMulSC.scala`), a Chisel generator for matrix multiplication. It is parameterized on the matrix dimensions and the amount of parallelism it supports.
 
@@ -32,14 +32,7 @@ The _parallelism_ parameter will control how many output elements are computed o
 To clarify, the entire input matrices will be transfered in a single-cycle, but the computation of the product may take multiple cycles (depends on dimensions and parallelism).
 
 
-### Tips
-* Use this problem as an opportunity to _progressively_ develop/extend things. The test cases are provided in order of increasing design complexity. For example, implementing a system that can only do matrix-vector is simpler than matrix-matrix (Hint: There are test cases that use a 1-row or 1-column matrix). Tackle parallelism last.
-* We recommend you make use of Chisel's `Counter` object, but you may want to use caution with its `wrap` output. It indicates that the counter is at its maximum value _and_ the count enable is high so the counter will _wrap_ around next cycle. If you use `wrap` in logic controlling the counter, you may introduce a combinational loop. You may be happiest with manually checking if the counter is at its maximum value.
-* If two Vecs have exactly the same types and lengths, you can connect them all at once (with `:=`).
-
-
-
-# Problem 3 -  Multi-Cycle Transfer Version - MatMulMC (50 pts)
+# Problem 3 -  Multi-Cycle Transfer Version 
 
 We will revise our `MatMulSC` module from Problem 2 to improve its scalability. Our original MatMulSC loaded the input matrices in a single cycle which may be impractical for matrices of non-trivial size. Instead, we will add a parameter `cyclesPerTransfer` which will set how many cycles it takes to load in the input matrices as well as output the resulting product matrix. By performing the transfers over multiple cycles, we can greatly reduce the bandwidth required. Although this change may sound simple, it will require us to generalize and revise several parts of the MatMulSC design to make this `MatMulMC` (in `src/main/scala/hw4/MatMulMC.scala`).
 
